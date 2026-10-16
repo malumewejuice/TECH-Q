@@ -60,7 +60,7 @@ export const Route = createFileRoute("/")({
           url: SITE_URL,
           image: OG_IMAGE,
           email: "info@techqho.co.ca",
-          telephone: "+27615126221",
+          telephone: "+27789139800",
           areaServed: "ZA",
           address: {
             "@type": "PostalAddress",
@@ -618,7 +618,7 @@ function Contact() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-white/80 transition-colors hover:text-cyan-electric"
                   >
-                    <Phone className="h-4 w-4 text-cyan-electric" /> +27 61 512 6221
+                    <Phone className="h-4 w-4 text-cyan-electric" /> +27 78 913 9800
                   </a>
                   <div className="flex items-center gap-3 text-white/80">
                     <MapPin className="h-4 w-4 text-cyan-electric" /> Remote-first · HQ Johannesburg, South Africa
@@ -801,7 +801,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-cyan-electric"
               >
-                +27 61 512 6221
+                +27 78 913 9800
               </a>
             </li>
             <li>Johannesburg · South Africa</li>
