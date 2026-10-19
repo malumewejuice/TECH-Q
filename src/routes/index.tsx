@@ -59,7 +59,7 @@ export const Route = createFileRoute("/")({
           description: PAGE_DESC,
           url: SITE_URL,
           image: OG_IMAGE,
-          email: "info@techqho.co.ca",
+          email: "info@techqho.co.za",
           telephone: "+27789139800",
           areaServed: "ZA",
           address: {
@@ -607,10 +607,10 @@ function Contact() {
                 </p>
                 <div className="mt-8 space-y-3 text-sm">
                   <a
-                    href="mailto:info@techqho.co.ca"
+                    href="mailto:info@techqho.co.za"
                     className="flex items-center gap-3 text-white/80 transition-colors hover:text-cyan-electric"
                   >
-                    <Mail className="h-4 w-4 text-cyan-electric" />&nbsp; info@techqho.co.ca
+                    <Mail className="h-4 w-4 text-cyan-electric" />&nbsp; info@techqho.co.za
                   </a>
                   <a
                     href={WHATSAPP_URL}
@@ -658,7 +658,7 @@ function Contact() {
                     details && `\nWhat they need:\n${details}`,
                   ].filter(Boolean);
 
-                  const mailto = `mailto:info@techqho.co.ca?subject=${encodeURIComponent(
+                  const mailto = `mailto:info@techqho.co.za?subject=${encodeURIComponent(
                     subject,
                   )}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
 
@@ -790,8 +790,8 @@ function Footer() {
           </div>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <a href="mailto:info@techqho.co.ca" className="transition-colors hover:text-cyan-electric">
-                info@techqho.co.ca
+              <a href="mailto:info@techqho.co.za" className="transition-colors hover:text-cyan-electric">
+                info@techqho.co.za
               </a>
             </li>
             <li>
