@@ -15,14 +15,10 @@ export function Reveal({
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-
-    // Fallback: if IntersectionObserver isn't supported (or misbehaves,
-    // which happens on some mobile browsers), just show the content.
     if (typeof IntersectionObserver === "undefined") {
       setVisible(true);
       return;
     }
-
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -30,14 +26,11 @@ export function Reveal({
           io.disconnect();
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -10% 0px" },
+      { threshold: 0.12 },
     );
     io.observe(el);
-
-    // Safety net: force visible after a short delay no matter what, so
-    // content never stays permanently hidden if the observer fails to fire.
+    // Safety net so content never stays hidden if the observer fails (some mobile browsers)
     const timeout = setTimeout(() => setVisible(true), 1200);
-
     return () => {
       io.disconnect();
       clearTimeout(timeout);

@@ -25,11 +25,11 @@ import { WhatsAppIcon } from "@/components/site/WhatsAppIcon";
 import { WhatsAppQR, WHATSAPP_URL } from "@/components/site/WhatsAppQR";
 import logo from "@/assets/tech-qho-logo.png";
 
-const SITE_URL = "https://techq.lovable.app";
+const SITE_URL = "https://techqho.co.za";
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
-const PAGE_TITLE = "Tech Q | IT Solutions & Web Development, Johannesburg";
+const PAGE_TITLE = "Tech Qho | IT Solutions & Web Development, Johannesburg";
 const PAGE_DESC =
-  "Tech Q builds custom websites, business process automation, secure IT networks, and mobile apps for South African businesses. Free scoped quote in 48 hours.";
+  "Tech Qho builds custom websites, business process automation, secure IT networks, and mobile apps for South African businesses. Free scoped quote in 48 hours.";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: SITE_URL + "/" },
       { property: "og:image", content: OG_IMAGE },
-      { property: "og:site_name", content: "Tech Q" },
+      { property: "og:site_name", content: "Tech Qho" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: PAGE_TITLE },
       { name: "twitter:description", content: PAGE_DESC },
@@ -55,11 +55,11 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Tech Q",
+          name: "Tech Qho",
           description: PAGE_DESC,
           url: SITE_URL,
           image: OG_IMAGE,
-          email: "info@techqho.co.za",
+          email: "info@techqho.co.ca",
           telephone: "+27789139800",
           areaServed: "ZA",
           address: {
@@ -115,57 +115,54 @@ const services = [
 
 const projects = [
   {
-    name: "Meridian Logistics",
-    tag: "Automation Platform",
-    result: "62% faster dispatch, $1.4M saved yearly",
+    name: "TQsupport",
+    tag: "Level 1 Tech Support",
+    result: "Dependable first-line IT support for businesses",
     color: "from-cyan-electric to-cyber",
   },
   {
-    name: "Nova Bank",
+    name: "Debt Less",
     tag: "Secure Network Overhaul",
     result: "Zero breaches in 24 months",
     color: "from-cyber to-navy",
   },
   {
-    name: "Kite Retail",
-    tag: "Custom E-commerce",
-    result: "3.2× revenue in first quarter",
+    name: "amagiga",
+    tag: "Gig Finder for Artists",
+    result: "Connecting artists with live gig opportunities",
     color: "from-cyan-electric to-navy",
   },
   {
-    name: "Pulse Health",
-    tag: "Mobile Companion App",
-    result: "180k active users, 4.9 stars",
+    name: "Zondi Tribal Authority",
+    tag: "Custom Website",
+    result: "A live community website for Nkandla",
     color: "from-cyber to-cyan-electric",
   },
 ];
 
 const testimonials = [
   {
-    quote:
-      "Tech Q rebuilt our infrastructure while we kept shipping. Zero downtime, zero drama. They just get it.",
-    name: "Amelia louw",
-    role: "CTO, Meridian Logistics",
-    company: "Meridian Logistics",
-    initials: "AL",
+    quote: "As a small business, we don't have a dedicated IT department. TQsupport acts as our first line of defense. They handle all the 'my printer won't connect' and 'I forgot my password' calls so my operations manager can actually focus on operations.",
+    name: "Mark De Villiers",
+    role: "Operations Manager, TQsupport",
+    company: "TQsupport",
+    initials: "TQ",
     gradient: "from-cyber to-cyan-electric",
   },
   {
-    quote:
-      "Their automation work paid for itself in six weeks. Our ops team finally has time to think, not just react.",
-    name: "Masego Mdluli",
-    role: "COO, Kite Retail",
-    company: "Kite Retail",
-    initials: "MM",
+    quote: "Before Amagiga, finding weekend gigs felt like a full-time job. I was spending hours scrolling through social media and cold calling bars with no luck. Now, I just set my availability and genre, and the gigs come to me. I've gone from singing one weekend a month to being booked solid every Friday and Saturday. It’s been a game changer for my confidence and my wallet.",
+    name: "Sandile Mkhize",
+    role: "Musician, amagiga",
+    company: "amagiga",
+    initials: "AG",
     gradient: "from-cyan-electric to-cyber",
   },
   {
-    quote:
-      "The mobile app they designed hit 100k downloads in a month. Craft you can feel in every tap.",
-    name: "Serona Ramasamy",
-    role: "Head of Product, Pulse Health",
-    company: "Pulse Health",
-    initials: "SR",
+    quote: "The custom website developed for Zondi Tribal Authority has transformed our online presence. It's not only visually appealing but also highly functional, making it easy for our community to access information and engage with us.",
+    name: "Nomsa Dlamini",
+    role: "Community Liaison, Zondi Tribal Authority",
+    company: "Zondi Tribal Authority",
+    initials: "ZT",
     gradient: "from-cyber via-cyan-electric to-cyber",
   },
 ];
@@ -215,7 +212,7 @@ function Hero() {
         <Reveal delay={100}>
           <h1 className="mt-6 max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
             Future-Proof Your Business with{" "}
-            <span className="text-cyber-gradient">Tech Q.</span>
+            <span className="text-cyber-gradient">Tech Qho.</span>
           </h1>
         </Reveal>
         <Reveal delay={200}>
@@ -265,7 +262,7 @@ function Hero() {
 }
 
 function Marquee() {
-  const logos = ["MERIDIAN", "NOVA BANK", "KITE", "PULSE HEALTH", "AURORA", "HELIX", "STRATOS"];
+  const logos = ["TQSUPPORT", "DEBT LESS", "AMAGIGA", "ZONDI TRIBAL AUTHORITY", "AURORA", "HELIX", "STRATOS"];
   return (
     <div className="border-y border-white/5 bg-navy-deep py-6 text-white/40">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-12 gap-y-3 px-6 text-xs font-semibold tracking-[0.3em]">
@@ -356,14 +353,14 @@ function About() {
         <Reveal>
           <div>
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan-electric">
-              About Tech Q
+              About Tech Qho
             </span>
             <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
               We build the systems{" "}
               <span className="text-cyber-gradient">everything else runs on.</span>
             </h2>
             <p className="mt-6 text-lg text-white/70">
-              Tech Q is a team of engineers, designers, and network architects
+              Tech Qho is a team of engineers, designers, and network architects
               obsessed with one thing: making technology quietly, reliably brilliant
               for the businesses we partner with.
             </p>
@@ -509,7 +506,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
         </div>
         <div className="mt-2 text-2xl font-bold sm:text-3xl">{p.name}</div>
 
-        <div className="mt-3 max-h-0 overflow-hidden opacity-0 transition-all duration-500 group-hover:max-h-24 group-hover:opacity-100">
+        <div className="mt-3 max-h-24 overflow-hidden opacity-100 transition-all duration-500 sm:max-h-0 sm:opacity-0 sm:group-hover:max-h-24 sm:group-hover:opacity-100">
           <div className="text-sm text-cyan-electric">→ {p.result}</div>
         </div>
       </div>
@@ -750,18 +747,22 @@ function Footer() {
             />
           </div>
           <p className="mt-4 max-w-sm text-sm">
-            Tech Q: Code. Connect. Create. We partner with ambitious teams to
+            Tech Qho: Innovate. Build. Empower. We partner with ambitious teams to
             engineer the digital infrastructure of what's next.
           </p>
           <div className="mt-6 flex gap-3">
             {[
-              { Icon: Linkedin, label: "Tech Q on LinkedIn" },
-              { Icon: Twitter, label: "Tech Q on X (Twitter)" },
-              { Icon: Github, label: "Tech Q on GitHub" },
-            ].map(({ Icon, label }) => (
+              { Icon: Linkedin, label: "Tech Qho on LinkedIn", href: "" },
+              { Icon: Twitter, label: "Tech Qho on X (Twitter)", href: "" },
+              { Icon: Github, label: "Tech Qho on GitHub", href: "" },
+            ]
+              .filter((l) => l.href)
+              .map(({ Icon, label, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 transition-colors hover:border-cyan-electric hover:text-cyan-electric"
                 aria-label={label}
               >
@@ -813,7 +814,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-white/40 sm:flex-row">
-          <span>© {new Date().getFullYear()} Tech Q. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Tech Qho. All rights reserved.</span>
           <span className="font-mono tracking-widest">CODE · CONNECT · CREATE</span>
         </div>
       </div>

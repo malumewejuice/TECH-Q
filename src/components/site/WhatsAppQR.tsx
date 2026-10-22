@@ -2,7 +2,7 @@ import { QRCodeSVG } from "qrcode.react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export const WHATSAPP_URL =
-  "https://wa.me/27615126221?text=Hi%20Tech%20Q%2C%20I%27m%20interested%20in%20your%20services.%20Which%20one%20would%20you%20recommend%20for%20my%20needs%3F";
+  "https://wa.me/27789139800?text=Hi%20Tech%20Qho%2C%20I%27m%20interested%20in%20your%20services.%20Which%20one%20would%20you%20recommend%20for%20my%20needs%3F";
 
 interface WhatsAppQRProps {
   className?: string;
